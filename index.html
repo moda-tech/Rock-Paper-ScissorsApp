@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+   <style>
+    /* ボタンをまとめるための準備 */
+    body {
+      text-align: center;
+    }
+
+    /* ボタン自体の見た目 */
+    button {
+      background: none;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    /* 画像サイズ調整（任意） */
+    button img {
+      width: 100px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<p id="message">最初はグー、じゃんけん</p>
+<p id="result"></p>
+<p id="winning"></p>
+
+<button id="guu">
+  <img src="../IMG/guu.png" alt="グー">
+</button>
+<button id="choki">
+  <img src="../IMG/choki.png" alt="チョキ">
+</button>
+<button id="paa">
+  <img src="../IMG/paa.png" alt="パー">
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
