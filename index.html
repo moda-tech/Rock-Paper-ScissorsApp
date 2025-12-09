@@ -38,13 +38,34 @@
       width: 120px;            /* ← 表示したいサイズ */
       height: auto;
     }
+
+   #again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: none;
+    border: none;     /* ← 普段は枠なし */
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #again.active {
+    border: 2px solid #6e6e6e;
+    border-radius: 6px;
+    background-color: white;
+  }
+
+  #again.active:hover {
+    background-color: #f0f0f0;
+  }
+
+
     </style>
 </head>
 <body>
 
 <p id="message">最初はグー、じゃんけん</p>
 <p id="result"></p>
-<p id="winning"></p>
+
 
 <button id="guu">
   <img src="../IMG/guu.png" alt="グー">
@@ -55,6 +76,9 @@
 <button id="paa">
   <img src="../IMG/paa.png" alt="パー">
 </button>
+
+<p id="winning"></p>
+<button id="again"></button>
 
 <script src="script.js"></script>
 </body>
