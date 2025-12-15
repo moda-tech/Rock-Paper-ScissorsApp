@@ -14,7 +14,6 @@ ImagesAlt = ["グー","チョキ","パー"]
 
 function buttonResult(value,r) {
     const cal = Number(value) - Number(r);
-    const winning = document.getElementById("winning");
     if(cal === 0){
         result.textContent = "あいこ";
 
@@ -53,7 +52,6 @@ for(let i = 0; i < Buttons.length; i++){
 again.addEventListener("click", () => {
     again.textContent = "";
     message.textContent = "最初はグー、じゃんけん";
-    again.textContent = "";
     again.classList.remove("active");
     result.textContent = "";
 });
