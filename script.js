@@ -9,7 +9,7 @@ const again = document.getElementById("again");
 let win = 0;
 
 Buttons = ["guu","choki","paa"];
-Images = ["../IMG/guu.png","../IMG/choki.png","../IMG/paa.png"];
+Images = ["IMG/guu.png","IMG/choki.png","IMG/paa.png"];
 ImagesAlt = ["グー","チョキ","パー"]
 
 function buttonResult(value,r) {
